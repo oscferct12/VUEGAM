@@ -36,18 +36,18 @@ export default {
       type: String,
       default: "router-link"
     }
-  },
-  methods: {
-    hideSidebar() {
-      if (
-        this.autoClose &&
-        this.$sidebar &&
-        this.$sidebar.showSidebar === true
-      ) {
-        this.$sidebar.displaySidebar(false);
-      }
-    }
   }
+  // methods: {
+  //   hideSidebar() {
+  //     if (
+  //       this.autoClose &&
+  //       this.$sidebar &&
+  //       this.$sidebar.showSidebar === true
+  //     ) {
+  //       this.$sidebar.displaySidebar(false);
+  //     }
+  //   }
+  // }
 };
 </script>
 <style></style>

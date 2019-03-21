@@ -1,5 +1,5 @@
 .wrapper:after{
-  display: table;
+  display: inline-flex;
   clear: both;
   content: " ";
 }
@@ -48,6 +48,7 @@
 
       .md-list-item-content{
         justify-content: flex-start;
+        display: inline-flex;
         min-height: auto;
       }
 

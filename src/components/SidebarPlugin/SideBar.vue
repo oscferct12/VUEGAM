@@ -7,38 +7,28 @@
         </div>
       </a>
       
-      <a
-        target="_blank"
-        class="simple-text logo-normal"
-      >{{ title }}</a>
+      <a target="_blank" class="simple-text logo-normal">{{ title }}</a>
     </div>
-    <div class="sidebar-wrapper">
-      <slot name="content"></slot>
-      <md-list class="nav">
-        <!--By default vue-router adds an active class to each route link. This way the links are colored when clicked-->
-        <slot>
-          <sidebar-link
-            v-for="(link, index) in sidebarLinks"
-            :key="link.name + index"
-            :to="link.path"
-            :link="link"
-          ></sidebar-link>
-        </slot>
-      </md-list>
-    </div>
+    <dash-board></dash-board>
   </div>
 </template>
 <script>
 import SidebarLink from "./SidebarLink.vue";
+import DashBoard from "../../pages/Dashboard.vue";
 
 export default {
   components: {
-    SidebarLink
+    SidebarLink,
+    DashBoard
   },
   props: {
     title: {
       type: String,
       default: "GAM Project"
+    },
+    backgroundImage: {
+      type: String,
+      default: require("@/assets/img/sidebar-2.jpg")
     },
     imgLogo: {
       type: String,

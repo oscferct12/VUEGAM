@@ -6,7 +6,7 @@
 
     <md-card-content>
       <slot name="content">
-        <h4 class="title">{{projects.title}}</h4>
+        <h7 class="title">{{projects.title}}</h7>
       </slot>
     </md-card-content>
 
